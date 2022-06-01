@@ -11,12 +11,12 @@ def check_results(choices, player, computer):
             player > computer and not (player == len(choices) - 1 and computer == 0)):
         return 'Player Won'
     return 'Player Lost'
+
+---------------------------------------------------------------------------
+
+On branch feature/user_interface :
     
-    ---------------------------------------------------------------------------
-    
-    On branch feature/user_interface :
-    
-    def user_interface(options):
+def user_interface(options):
     '''
     function presenting options and asking for player feedback
     returns integer.
@@ -27,12 +27,11 @@ def check_results(choices, player, computer):
     user_input = int(input('What do you choose? '))
     return user_input
     
-    ---------------------------------------------------------------------------
+---------------------------------------------------------------------------
     
-    On branch feature/computer_choice :
-    
-    from random import randint
-
+On branch feature/computer_choice :
+  
+from random import randint
 
 def computer_choice(content):
     '''
